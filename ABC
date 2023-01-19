@@ -1,0 +1,49 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/Ui__Project/Script/XeNonUi", true))()
+    local CenterHubNo1 = library:CreateWindow("AA",Enum.KeyCode.RightControl)
+    local Tab = CenterHubNo1:CreateTab("Manu")
+    local Sector1 = Tab:CreateSector("AutoFrame","left")
+    Sector1:AddLabel("Frame")
+    Sector1:AddToggle("auto frame",false,function(t)
+       _G.Play = t
+while _G.Play do wait()
+   if game:GetService("Players").LocalPlayer.PlayerGui.gameGui.maxNinjitsuMenu.Visible == false then
+local args = {
+    [1] = "swingKatana"
+}
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer("swingKatana")
+
+elseif game:GetService("Players").LocalPlayer.PlayerGui.gameGui.maxNinjitsuMenu.Visible == true then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(70.7601318359375, 3.609140396118164, -50.02444839477539)
+    
+    wait(1)
+    
+    if game:GetService("Players").LocalPlayer.PlayerGui.gameGui.maxNinjitsuMenu.Visible == false then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24.871662139892578, 3.807142496109009, 39.19148635864258)
+    end
+end
+end
+
+    
+    end)
+
+    Sector1:AddLabel("Frame Coins")
+    Sector1:AddToggle("auto Coins",false,function(t)
+    
+    _G.Coins = t
+while _G.Coins do wait()
+    
+local My = game:GetService("Players").LocalPlayer.Coins.Value
+if My == 1 or My <= 9999 then
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(203.64157104492188, 91.95159149169922, 271.49273681640625)
+   
+   wait(2)
+   
+if My == 1 or My <= 9999 then
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(300.6524658203125, 151.6199951171875, 53.135536193847656)
+   
+    end
+end
+end
+    
+    
+end)
